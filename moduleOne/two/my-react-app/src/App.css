@@ -1,0 +1,35 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.first-div{
+  text-align: center;
+  width: 500px;
+  padding: 10px;
+  border-radius:5px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.button-style{
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border: none;
+  background-color: aqua;
+  font-weight: bolder;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+#count{
+  font-size: 40px;
+}
+#decrease{
+  background-color: rgb(247, 82, 82);
+}
