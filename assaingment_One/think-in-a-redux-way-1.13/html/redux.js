@@ -1,39 +1,54 @@
 function addedMatches() {
-  const addDiv = document.createElement("div");
-  addDiv.innerHTML = `
-      <div class="match">
-          <div class="wrapper">
-            <button class="lws-delete">
-              <img src="./image/delete.svg" alt="" />
-            </button>
-            <h3 class="lws-matchName">Match 1</h3>
-          </div>
-          <div class="inc-dec">
-            <form class="incrementForm">
-              <h4>Increment</h4>
-              <input
-                ${(id = "increment")}
-                type="number"
-                name="increment"
-                class="lws-increment"
-              />
-            </form>
-            <form class="decrementForm">
-              <h4>Decrement</h4>
-              <input
-                 ${(id = "decrement")}
-                type="number"
-                name="decrement"
-                class="lws-decrement"
-              />
-            </form>
-          </div>
-          <div class="numbers">
-            <h2 ${(id = "total")} class="lws-singleResult">120</h2>
-          </div>
-        </div>
-    
-    `;
+  //   const addDiv = document.createElement("div");
+  //   const show = document.getElementsByClassName("match");
+  //   //   addDiv.innerHTML = `
+  //   //       <div class="match">
+  //   //           <div class="wrapper">
+  //   //             <button class="lws-delete">
+  //   //               <img src="./image/delete.svg" alt="" />
+  //   //             </button>
+  //   //             <h3 class="lws-matchName">Match 1</h3>
+  //   //           </div>
+  //   //           <div class="inc-dec">
+  //   //             <form class="incrementForm">
+  //   //               <h4>Increment</h4>
+  //   //               <input
+  //   //                 ${(id = "increment")}
+  //   //                 type="number"
+  //   //                 name="increment"
+  //   //                 class="lws-increment"
+  //   //               />
+  //   //             </form>
+  //   //             <form class="decrementForm">
+  //   //               <h4>Decrement</h4>
+  //   //               <input
+  //   //                  ${(id = "decrement")}
+  //   //                 type="number"
+  //   //                 name="decrement"
+  //   //                 class="lws-decrement"
+  //   //               />
+  //   //             </form>
+  //   //           </div>
+  //   //           <div class="numbers">
+  //   //             <h2 ${(id = "total")} class="lws-singleResult">120</h2>
+  //   //           </div>
+  //   //         </div>
+
+  //   //     `;
+
+  //   addDiv.innerHTML = show;
+  //   const currentDiv = document.getElementById("createdDiv");
+  //   currentDiv.appendChild(addDiv);
+
+  const existingMatch = document.querySelector(".match");
+
+  if (!existingMatch) {
+    // Handle the case where there is no existing match element.
+    return;
+  }
+
+  const addDiv = existingMatch.cloneNode(true);
+
   const currentDiv = document.getElementById("createdDiv");
   currentDiv.appendChild(addDiv);
 }

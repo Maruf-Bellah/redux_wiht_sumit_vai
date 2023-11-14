@@ -52,3 +52,5 @@ decrementEl.addEventListener("click", () => {
     type: "decrease",
   });
 });
+
+console.log("amr sonar bangla ami tomay valobashi");
