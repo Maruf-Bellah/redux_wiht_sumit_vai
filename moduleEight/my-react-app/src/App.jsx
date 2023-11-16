@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import Counter from "./component/Counter/Counter";
 
 function App() {
   return (
-    <>
-      <h1>hello how are your </h1>
-    </>
+    <div>
+      <Counter></Counter>
+    </div>
   );
 }
 
