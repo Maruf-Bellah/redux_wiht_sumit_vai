@@ -53,8 +53,4 @@ decrementEl.addEventListener("click", () => {
   });
 });
 
-console.log("amr sonar bangla ami tomay valobashi");
-
-console.log(
-  "aj ei jaygay kono code lekhte pari nai , inshalla kal theke suru hobe "
-);
+console.log("kal theke insallah practice hobe ");
